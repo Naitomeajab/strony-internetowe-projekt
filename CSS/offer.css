@@ -1,15 +1,5 @@
 main > div {
-    text-align: center;
-    font-family: 'Orbitron', 'Roboto', sans-serif;
-    font-weight: 400;
     width: 30%;
-    min-width: 300px;
-    padding: 10px 0;
-    background-image: linear-gradient(var(--element-bg-gradient-top), var(--element-bg-gradient-bottom));
-    border: 1px solid var(--element-border);
-    color: white;
-    font-size: 16px;
-    text-shadow: 1px 1px 3px black;
 }
 div > h3 {
     font-family: 'Roboto', sans-serif;

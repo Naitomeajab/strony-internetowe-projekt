@@ -17,13 +17,17 @@ html {
     background-image: linear-gradient(var(--main-bg-gradient-top), var(--main-bg-gradient-bottom));
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
+    color: white;
 }
 body { margin: 0; }
-/* Navigation */
-nav {
+.flex {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+}
+/* Navigation */
+nav {
     gap: 50px;
 
     padding: 5px 0;
@@ -66,9 +70,6 @@ button:hover {
 }
 /* main */
 main {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 30px;
     margin: 30px 0;
 }
@@ -81,4 +82,25 @@ main h2 {
     color: white;
     flex-basis: 100%;
     text-transform: uppercase;
+}
+main > div {
+    text-align: center;
+    font-family: 'Orbitron', 'Roboto', sans-serif;
+    font-weight: 400;
+    width: 90%;
+    min-width: 300px;
+    padding: 10px 0;
+    background-image: linear-gradient(var(--element-bg-gradient-top), var(--element-bg-gradient-bottom));
+    border: 1px solid var(--element-border);
+    color: white;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px black;
+}
+.main-aboutus p {
+    width: 60%;
+    text-align: left;
+}
+.main-featured div { width: 30%; }
+div > p {
+    font-family: 'Roboto', sans-serif;
 }
