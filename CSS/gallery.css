@@ -1,0 +1,14 @@
+.aboutUs{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 0 10px;
+    flex-basis: 80%;
+    background-color: darkgreen;
+    color: lightgreen;
+    height: fit-content;
+}
+.aboutUs h3 {
+    text-align: center;
+    font-family: 'Orbitron', 'Roboto', sans-serif;
+}

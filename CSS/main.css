@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap'); /* font-family: 'Orbitron', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap'); /* font-family: 'Roboto', sans-serif; */
+/* url(https://placekitten.com/WIDTH/HEIGHT); <-- placeholder image */
+:root {
+    --main-bg-gradient-top: #070908;
+    --main-bg-gradient-bottom: #0E1210;
+    
+    --element-border: #316356;
+    --element-bg-gradient-top: #101815;
+    --element-bg-gradient-bottom: #243830;
+
+    --button-border-hover: #F58A4C;
+    --button-background: #273831;
+    --button-background-hover: #464d41;
+}
+html {
+    background-image: linear-gradient(var(--main-bg-gradient-top), var(--main-bg-gradient-bottom));
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+body { margin: 0; }
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    padding: 5px 0;
+
+    background-image: linear-gradient(to bottom right, var(--element-bg-gradient-top), var(--element-bg-gradient-bottom));
+    border: 1px solid var(--element-border);
+
+    font-family: 'Orbitron', 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px black;
+}
+nav a { 
+    color: white;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+nav a:hover { 
+    color: var(--button-border-hover);
+    text-shadow: 0 0 1px var(--button-border-hover); 
+}
+/* Button */
+button {
+    background-color: var(--button-background);
+    border: 1px solid var(--element-border);
+    box-shadow: none;
+
+    padding: 5px 10px;
+
+    color: white;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px black;
+
+    transition: 0.3s;
+}
+button:hover {
+    border-color: var(--button-border-hover);
+    background-color: var(--button-background-hover);
+    box-shadow: 0 0 5px 1px var(--button-border-hover);
+}
+/* main */
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px 0;
+}
+main h2 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Orbitron', 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color: white;
+    flex-basis: 100%;
+    text-transform: uppercase;
+}

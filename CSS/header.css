@@ -1,0 +1,14 @@
+header {
+    height: 420px;
+    background-image: url(../Grafika/logos/banner.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header h1 {   
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    font-size: 128px;
+    color: white;
+    text-shadow: 8px 8px 4px black;
+}
