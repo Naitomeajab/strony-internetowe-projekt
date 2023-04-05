@@ -9,14 +9,14 @@
     <title>Stellaris</title>
 </head>
 <body>
-    <header>
-        <h1>STELLARIS</h1>
+    <header class="flex">
+        <h1>Misha S.A.</h1>
     </header>
-    <nav class="flex">
+    <nav class="flex" id="nav">
         <a href="index.html">Strona główna</a>
-        <a href="Podstrony/oferta.html">Oferta</a>
-        <a href="Podstrony/galeria.html">Galeria</a>
-        <a href="Podstrony/kontakt.html">Kontakt</a>
+        <a href="Podstrony/oferta.html#nav">Oferta</a>
+        <a href="Podstrony/galeria.html#nav">Galeria</a>
+        <a href="Podstrony/kontakt.html#nav">Kontakt</a>
     </nav>
     <main class="flex">
         <div class="flex main-aboutus">
@@ -60,15 +60,15 @@
         </div>
         <div class="main-categories flex">
             <h2>Kategorie</h2>
-            <a class="button" href="#">
+            <a class="button" href="Podstrony/kategorie/statki.html#nav">
                 <img src="Grafika/icons/kat-ships.png" class="preview" alt="">
                 <p>Statki</p>
             </a>
-            <a class="button" href="#">
+            <a class="button" href="Podstrony/kategorie/floty.html#nav">
                 <img src="Grafika/icons/kat-fleets.png" class="preview" alt="">
                 <p>Floty do wynajęcia</p>
             </a>
-            <a class="button" href="#">
+            <a class="button" href="Podstrony/kategorie/technologie.html">
                 <img src="Grafika/icons/kat-techs.png" class="preview" alt="">
                 <p>Technologie</p>
             </a>
@@ -93,10 +93,41 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div>STOPKA1</div>
-        <div>STOPKA2</div>
-        <div>STOPKA3</div>
+    <footer class="flex">
+        <div>
+            <p class="orbitron">Mapa strony</p>
+            <ul>
+                <li><a href="index.html">Strona główna</a></li>
+                <li><a href="Podstrony/oferta.html#nav">Oferta</a>
+                    <ul>
+                        <li><a href="Podstrony/kategorie/statki.html#nav">Statki</a></li>
+                        <li><a href="Podstrony/kategorie/floty.html#nav">Floty do wynajęcia</a></li>
+                        <li><a href="Podstrony/kategorie/technologie.html#nav">Technologie</a></li>
+                    </ul>
+                </li>
+            <li><a href="Podstrony/galeria.html#nav">Galeria</a></li>
+            <li><a href="Podstrony/kontakt.html#nav">Kontakt</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="orbitron">Prawa autorskie</p>
+            <p>2325&copy; Kacper Jabłoński</p>
+        </div>
+        <div>
+            <p class="orbitron">Kontakt</p>
+            <span class="align-left">Email: misha.mg@stellaris.com<br>
+            Telefon: +255 420-420-420<br>
+            Głowna siedziba: Vrinnus<br>
+            Pomniejsze stacje:
+            <ul>
+                <li>Assaniz</li>
+                <li>Bashpat</li>
+                <li>Ophelius</li>
+                <li>Peya</li>
+                <li>Yrgel</li>
+            </ul>
+            </span>
+        </div>
     </footer>
 </body>
 </html>

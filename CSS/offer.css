@@ -7,3 +7,8 @@ div > h3 {
     text-transform: uppercase;
     margin: 0;
 }
+.offer-tech {
+    width: fit-content;
+    padding: 10px;
+    column-gap: 30px;
+}
