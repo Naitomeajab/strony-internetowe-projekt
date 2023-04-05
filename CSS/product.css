@@ -1,0 +1,25 @@
+.product {
+    width: 90%;
+    align-items: flex-start;
+}
+.product div {
+    padding: 10px;
+    box-sizing: border-box;
+}
+.product-image {
+    width: 70%;
+    border-right: 3px solid var(--element-border);
+}
+.product-image div {
+    max-height: 400px;
+    height: auto;
+}
+.product-image img {
+    max-width: 100%;
+    max-height: 400px;
+    height: auto;
+    width: auto;
+}
+.product-purchase {
+    width: 30%;
+}

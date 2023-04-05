@@ -73,7 +73,7 @@ nav a:hover {
     transition: 0.3s;
     user-select: none;
 }
-.button:hover {
+.button:hover, .button:focus {
     border-color: var(--button-border-hover);
     background-color: var(--button-background-hover);
     box-shadow: 0 0 5px 1px var(--button-border-hover);
