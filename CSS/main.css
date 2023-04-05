@@ -20,12 +20,18 @@ html {
     color: white;
 }
 body { margin: 0; }
+h1, h2, h3 { font-family: 'Orbitron', sans-serif; }
+
 .flex {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
+.orbitron { font-family: 'Orbitron', sans-serif;}
+.roboto { font-family: 'Roboto', sans-serif;}
+
+
 /* Navigation */
 nav {
     gap: 50px;
@@ -50,20 +56,23 @@ nav a:hover {
     text-shadow: 0 0 1px var(--button-border-hover); 
 }
 /* Button */
-button {
+.button {
     background-color: var(--button-background);
     border: 1px solid var(--element-border);
     box-shadow: none;
 
     padding: 5px 10px;
 
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
     color: white;
     font-size: 16px;
     text-shadow: 1px 1px 3px black;
 
     transition: 0.3s;
+    user-select: none;
 }
-button:hover {
+.button:hover {
     border-color: var(--button-border-hover);
     background-color: var(--button-background-hover);
     box-shadow: 0 0 5px 1px var(--button-border-hover);
@@ -76,7 +85,6 @@ main {
 main h2 {
     margin: 0;
     text-align: center;
-    font-family: 'Orbitron', 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 64px;
     color: white;
@@ -85,7 +93,6 @@ main h2 {
 }
 main > div {
     text-align: center;
-    font-family: 'Orbitron', 'Roboto', sans-serif;
     font-weight: 400;
     width: 90%;
     min-width: 300px;
@@ -103,4 +110,62 @@ main > div {
 .main-featured div { width: 30%; }
 div > p {
     font-family: 'Roboto', sans-serif;
+}
+div > span {
+    font-family: 'Roboto', sans-serif;
+}
+div > h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+}
+.preview {
+    border-radius: 5%;
+    border: 1px solid var(--element-border);
+}
+.cost {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+.sale-before {
+    text-decoration: line-through;
+    font-size: 12px;
+}
+.sale-after {
+    color: red;
+    font-weight: 900;
+    padding-left: 5px;
+}
+
+.main-categories {
+    width: 28%;
+    column-gap: 20px;
+    min-height: 220px;
+    align-items: flex-start;
+}
+.main-categories a {
+    width: 25%;
+}
+.main-categories p {
+    margin: 0;
+}
+
+.main-reviews {
+    width: 60%;
+    column-gap: 50px;
+    min-height: 220px;
+    align-items: flex-start;
+}
+.main-reviews div {
+    width: 40%;
+    text-align: left;
+}
+.main-reviews span {
+    margin: 0;
 }

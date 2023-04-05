@@ -7,22 +7,3 @@ div > h3 {
     text-transform: uppercase;
     margin: 0;
 }
-.preview {
-    border-radius: 5%;
-    border: 1px solid var(--element-border);
-}
-.cost {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.sale-before {
-    text-decoration: line-through;
-    font-size: 12px;
-}
-.sale-after {
-    color: red;
-    font-weight: 900;
-    padding-left: 5px;
-}
