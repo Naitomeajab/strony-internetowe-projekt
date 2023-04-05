@@ -1,0 +1,11 @@
+figure {
+    width: 30%;
+    margin: 10px;
+    max-height: 570px;
+}
+figure img {
+    width: 100%;
+    height: auto;
+    max-height: 570px;
+    max-width: 570px;
+}
