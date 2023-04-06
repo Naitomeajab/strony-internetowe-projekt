@@ -7,7 +7,23 @@
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="stylesheet" href="../CSS/kontakt.css">
-    <title>Kontakt - Misha S.A.</title>
+    <title>Szybki zakup - Misha S.A.</title>
+    <style>
+        .PLEASE {
+            background-color: darkmagenta;
+            font-family: Arial;
+            width: 45%;
+            margin: auto;
+        }
+        .PLEASE span {
+            opacity: 0;
+            transition: 1s;
+            user-select: none;
+        }
+        .PLEASE:hover span {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
     <header class="flex">
@@ -20,20 +36,37 @@
         <a href="kontakt.html">Kontakt</a>
     </nav>
     <main class="flex">
-        <div>
-            <h1>KONTAKT - TO DO</h1>
-            <span class="align-left">Email: misha.mg@stellaris.com<br>
-            Telefon: +255 420-420-420<br>
-            Głowna siedziba: Vrinnus<br>
-            Pomniejsze stacje:
-            <ul class="contact">
-                <li>Assaniz</li>
-                <li>Bashpat</li>
-                <li>Ophelius</li>
-                <li>Peya</li>
-                <li>Yrgel</li>
-            </ul>
-            </span>
+        <h2>ZAKUP PRODUKTU</h2>
+        <div class="product-purchase">
+            <div class="cost">
+                <span class="orbitron">XYZ</span><img src="../Grafika/icons/currency.png" class="currency" alt="Kredyty energetyczne">
+            </div>
+
+            <div class="PLEASE"><span>Ze względu na brak JS i PHP, unzaje, że robienie po dwie strony na produkt jest kontrproduktywne.</span></div><br>
+            
+            <form action="blank.html">
+                <label for="imperium">Nazwa Imperium:</label>
+                <input type="text" id="imperium" class="button">
+                <br><br>
+                <label for="stacja">Wybierz stację odbioru:</label>
+                <select id="stacja" class="button">
+                    <option value="Assanitz">Assaniz</option>
+                    <option value="Bashpat">Bashpat</option>
+                    <option value="Ophelius">Ophelius</option>
+                    <option value="Peya">Peya</option>
+                    <option value="Vrinnus">Vrinnus</option>
+                    <option value="Yrgel">Yrgel</option>
+                </select>
+                <br><br>
+                <label for="ilosc">Wybierz Ilość:</label>
+                <input id="ilosc" type="number" class="button">
+                <br><br>
+                <label for="uwagi">Dodatkowe uwagi:</label><br>
+                <textarea id="uwagi" class="button"></textarea>
+                <br><br>
+                <input type="reset" class="button" value="Wyczyść">
+                <input type="submit" class="button" value="Złóż zamówienie">
+            </form>
         </div>
     </main>
     <footer class="flex">
@@ -72,5 +105,5 @@
             </span>
         </div>
     </footer>
-</body>
-</html>
+    </body>
+    </html>
