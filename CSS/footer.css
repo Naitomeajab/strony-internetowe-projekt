@@ -15,7 +15,7 @@ footer {
     text-shadow: 1px 1px 3px black;
 }
 footer div {
-    min-width: 200px;
+    min-width: 210px;
     width: 15%;
     text-align: left;
 }
@@ -31,3 +31,8 @@ color: var(--button-border-hover);
 text-shadow: 0 0 1px var(--button-border-hover); 
 }
 footer div ul { margin: auto; }
+@media (max-width: 450px) {
+    footer div {
+        border-bottom: 1px solid var(--element-border);
+    }
+}

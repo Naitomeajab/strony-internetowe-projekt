@@ -11,4 +11,10 @@ div > h3 {
     width: fit-content;
     padding: 10px;
     column-gap: 30px;
+    row-gap: 10px;
+}
+@media (max-width: 550px) {
+    .offer-tech > a {
+        flex-basis: 30%;
+    }
 }

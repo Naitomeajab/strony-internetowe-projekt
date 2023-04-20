@@ -23,3 +23,11 @@
 .product-purchase {
     width: 30%;
 }
+@media (max-width: 900px) {
+    .product-image {
+        width: 90%;
+        border: 0;
+        border-bottom: 3px solid var(--element-border);
+    }
+    .product-purchase {width: 90%}
+}

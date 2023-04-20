@@ -19,6 +19,7 @@ html {
     font-weight: 800;
     color: white;
     scroll-behavior: smooth;
+    line-height: 1.4;
 }
 body { margin: 0; }
 h1, h2, h3 { font-family: 'Orbitron', sans-serif; }
@@ -35,7 +36,8 @@ textarea { resize: none; }
 
 /* Navigation */
 nav {
-    gap: 50px;
+    column-gap: 50px;
+    row-gap: 15px;
 
     padding: 5px 0;
 
@@ -105,10 +107,14 @@ main > div {
     text-shadow: 1px 1px 3px black;
 }
 .main-aboutus p {
+    min-width: 280px;
     width: 60%;
     text-align: left;
 }
-.main-featured div { width: 30%; }
+.main-featured div { 
+    width: 30%; 
+    min-width: 300px;
+}
 div > p, div > span { font-family: 'Roboto', sans-serif; }
 div > h3 {
     font-family: 'Roboto', sans-serif;
@@ -137,6 +143,10 @@ img {
     text-decoration: line-through;
     font-size: 12px;
 }
+.sale-purchase {
+    width: 100% !important;
+    gap: 10px;
+}
 .sale-after {
     color: red;
     font-weight: 900;
@@ -146,11 +156,14 @@ img {
 .main-categories {
     width: 28%;
     column-gap: 20px;
+    row-gap: 10px;
     min-height: 220px;
+    min-width: 530px;
     align-items: flex-start;
 }
 .main-categories a {
     width: 25%;
+    min-width: 100px;
 }
 .main-categories p {
     margin: 0;
@@ -168,4 +181,39 @@ img {
 }
 .main-reviews span {
     margin: 0;
+}
+@media (max-width: 800px) {
+    .main-reviews {
+        width: 90%;
+    }
+}
+@media (max-width: 670px) {
+    .main-featured {
+        row-gap: 50px;
+    }
+}
+@media (max-width: 600px) {
+    main h2 {
+        font-size: 40px;
+    }
+    .main-categories {
+        min-width: 0px;
+        width: 90%;
+    }
+    .main-categories a {
+        flex-basis: 50%;
+    }
+    .main-reviews div {
+        width: 90%;
+        margin: 30px 0;
+    }
+}
+@media (max-width: 450px) {
+    nav {
+        justify-content: space-around !important;
+    }
+    nav a {
+        flex-basis: 40%;
+        text-align: center;
+    }
 }
